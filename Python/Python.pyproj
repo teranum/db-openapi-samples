@@ -4,8 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7338c4f4-e598-4cda-b9cf-07b27eaf40f4</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>21. 웹소켓 실시간 체결시세.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +21,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="00. 사용방법.py" />
     <Compile Include="01. 로그인.py" />
+    <Compile Include="04. 국내옵션종목조회.py" />
+    <Compile Include="03. 국내선물종목조회.py" />
+    <Compile Include="02. 주식종목조회.py" />
+    <Compile Include="21. 웹소켓 실시간 체결시세.py" />
+    <Compile Include="app_keys.py" />
     <Compile Include="common.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

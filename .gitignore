@@ -11,6 +11,7 @@
 *.sln.docstates
 app_keys.*
 temp_*.*
+*dbopenapi/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
