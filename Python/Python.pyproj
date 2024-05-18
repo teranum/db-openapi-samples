@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7338c4f4-e598-4cda-b9cf-07b27eaf40f4</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>22. 국내선물옵션 실시간 시세.py</StartupFile>
+    <StartupFile>05. 해외주식 종목조회.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
