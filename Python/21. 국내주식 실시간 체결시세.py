@@ -13,13 +13,13 @@ async def main():
     # if not await api.login(appkey, appsecretkey): return print(f'연결실패: {api.last_message}')
     if not await api.login('', '', access_token=saved_access_token): return print(f'연결실패: {api.last_message}')
 
-    # 국선 실시간 요청
-    if not await api.add_realtime('F00', 'F '+'101V6000') : print(f'실시간 등록 실패: {api.last_message}')
+    # 삼성전자 주식 실시간 시세 요청
+    if not await api.add_realtime('S00', 'J '+'005930'): print(f'실시간 등록 실패: {api.last_message}')
     
     # 10분후 실시간 시세 중지
     print('10분동안 실시간 작동중...');
     await asyncio.sleep(600)
-    if not await api.remove_realtime('F00', 'F '+'101V6000') : print(f'실시간 중지 실패: {api.last_message}')
+    if not await api.remove_realtime('S00', 'J '+'005930'): print(f'실시간 중지 실패: {api.last_message}')
     await asyncio.sleep(1)
     
     ... # 다른 작업 수행
@@ -29,7 +29,7 @@ async def main():
 def on_message(api, msg:str): print(f'on_message: {msg}')
 
 def on_realtime(api, trcode, key, realtimedata):
-    if trcode == 'F00':
+    if trcode == 'S00':
         print(f'체결시세: {trcode}, {key}, {realtimedata}')
     else:
         print(f'실시간: {trcode}, {key}, {realtimedata}')
@@ -39,7 +39,7 @@ asyncio.run(main())
 # Output:
 '''
 10분동안 실시간 작동중...
-on_message: F00(1): 정상처리되었습니다.
-체결시세: F00, None, {'tr_key': ['F 101V6000']}
+on_message: S00(1): 정상처리되었습니다.
+체결시세: S00, None, {'tr_key': ['J 005930']}
 
 '''

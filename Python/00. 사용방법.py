@@ -55,10 +55,16 @@ dbopenapi 모듈사용
     
 샘플 코드 이용
 1. 샘플폴더에 app_keys.py 파일 생성
-2. app_keys.py 파일에 아래와 같이 변수 세팅
+    app_keys.py 파일에 아래와 같이 변수 세팅
     appkey = '발급받은 앱Key'
     appsecretkey = '발급받은 앱 비밀Key'
-3. 샘플코드 실행
+    또는 샘플 01.로그인.py 실행결과로 출력된 access_token을 등록해 사용
+        saved_access_token = '새로 발급받은 access_token'
+        
+2. 샘플코드 실행
+
+01. 로그인.py 파일 실행 후 발급된 access_token을 app_keys.py 파일에 등록 (saved_access_token 변수에 세팅)
+다음 샘플코드에서는 로그인시 access_token을 사용하여 로그인
 
 01 ~ 로그인, 종목조회, 계좌조회
 10 ~ 시세 및 차트조회

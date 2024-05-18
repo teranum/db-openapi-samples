@@ -3,8 +3,6 @@ import dbopenapi
 from common import *
 from app_keys import appkey, appsecretkey, saved_access_token # app_keys.py 파일에 appkey, appsecretkey 변수를 정의하고 사용하세요
 
-'''
-'''
 async def main():
     api=dbopenapi.OpenApi()
     # if not await api.login(appkey, appsecretkey): return print(f'연결실패: {api.last_message}')

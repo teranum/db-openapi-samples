@@ -23,14 +23,28 @@
   <ItemGroup>
     <Compile Include="00. 사용방법.py" />
     <Compile Include="01. 로그인.py" />
-    <Compile Include="11. 주식 현재가 조회.py" />
-    <Compile Include="06. 해외선물옵션종목조회.py" />
-    <Compile Include="05. 해외주식종목조회.py" />
-    <Compile Include="04. 국내옵션종목조회.py" />
-    <Compile Include="03. 국내선물종목조회.py" />
-    <Compile Include="02. 주식종목조회.py" />
+    <Compile Include="02. 주식 종목조회.py" />
+    <Compile Include="03. 국내선물 종목조회.py" />
+    <Compile Include="04. 국내옵션 종목조회.py" />
+    <Compile Include="05. 해외주식 종목조회.py" />
+    <Compile Include="06. 해외선물옵션 종목조회.py" />
+    <Compile Include="07. 국내주식 계좌-잔고-미체결 조회.py" />
+    <Compile Include="08. 국내선물옵션 계좌-잔고-미체결 조회.py" />
+    <Compile Include="09. 해외주식 계좌-잔고-미체결 조회.py" />
+    <Compile Include="10. 해외선물옵션 계좌-잔고-미체결 조회.py" />
+    <Compile Include="11. 주식 현재가조회.py" />
+    <Compile Include="12. 주식조건상승하락조회.py" />
+    <Compile Include="13. 국내선물옵션 현재가조회.py" />
+    <Compile Include="14. 해외주식 현재가조회.py" />
+    <Compile Include="15. 해외선물옵션 현재가조회.py" />
+    <Compile Include="16. 국내주식선물옵션 차트요청.py" />
+    <Compile Include="17. 국내주식선물옵션 차트요청-연속조회.py" />
+    <Compile Include="18. 해외주식 차트요청.py" />
+    <Compile Include="19. 해외선물옵션 차트요청.py" />
+    <Compile Include="21. 국내주식 실시간 체결시세.py" />
     <Compile Include="22. 국내선물옵션 실시간 시세.py" />
-    <Compile Include="21. 웹소켓 실시간 체결시세.py" />
+    <Compile Include="23. 해외주식 실시간 시세.py" />
+    <Compile Include="24. 해외선물옵션 실시간 시세호가.py" />
     <Compile Include="app_keys.py" />
     <Compile Include="common.py" />
   </ItemGroup>
