@@ -11,7 +11,7 @@ async def main():
     # 선물옵션 가정산예탁금 상세
     request = {
         'In': {
-            'BnsDt': '' # 매매일
+            'BnsDt': '99999999' # 매매일
         }
     }
     response = await api.request('CFOEQ11100', request)
