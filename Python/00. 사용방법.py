@@ -31,6 +31,9 @@ dbopenapi 모듈사용
         cont_yn:str - 연속조회여부 (연속조회: 'Y', 단순조회: 'N'), 기본값: 'N'
         cont_key:str - 연속조회키 (연속조회여부가 'Y'인 경우 필수 세팅), 기본값: '0'
         return: 응답 데이터 (dict), 요청 실패시 None
+
+        * 국내선물옵션시세의 경우, 주식시세와 TR코드가 겹칠 시 앞에 'F'를 붙여서 사용 (ex. 'PRICE' -> 'FPRICE')
+        (FCODES, FPRICE, FHOGA, FDAYTRADE, FCONCLUSION)
     
     add_realtime(tr_cd:str, tr_key:str) -> bool: 실시간 등록
         tr_cd:str - TR 코드
